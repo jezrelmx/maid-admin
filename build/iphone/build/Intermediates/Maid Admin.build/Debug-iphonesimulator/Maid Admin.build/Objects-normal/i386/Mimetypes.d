@@ -1,0 +1,3 @@
+dependencies: \
+  /Users/jezrel_mx/Documents/Appcelerator_Workspace_DIM/Maid\ Admin/build/iphone/Classes/Mimetypes.m \
+  /Users/jezrel_mx/Documents/Appcelerator_Workspace_DIM/Maid\ Admin/build/iphone/Classes/Mimetypes.h

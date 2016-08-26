@@ -1,0 +1,8 @@
+"/Users/jezrel_mx/Documents/Appcelerator_Workspace_DIM/Maid Admin/build/android/gen/android/support/v7/appcompat/R.java"
+"/Users/jezrel_mx/Documents/Appcelerator_Workspace_DIM/Maid Admin/build/android/gen/android/support/v7/cardview/R.java"
+"/Users/jezrel_mx/Documents/Appcelerator_Workspace_DIM/Maid Admin/build/android/gen/com/maid/admin/AssetCryptImpl.java"
+"/Users/jezrel_mx/Documents/Appcelerator_Workspace_DIM/Maid Admin/build/android/gen/com/maid/admin/MaidAdminActivity.java"
+"/Users/jezrel_mx/Documents/Appcelerator_Workspace_DIM/Maid Admin/build/android/gen/com/maid/admin/MaidAdminAppInfo.java"
+"/Users/jezrel_mx/Documents/Appcelerator_Workspace_DIM/Maid Admin/build/android/gen/com/maid/admin/MaidAdminApplication.java"
+"/Users/jezrel_mx/Documents/Appcelerator_Workspace_DIM/Maid Admin/build/android/gen/com/maid/admin/R.java"
+"/Users/jezrel_mx/Documents/Appcelerator_Workspace_DIM/Maid Admin/build/android/gen/ti/modules/titanium/ui/R.java"

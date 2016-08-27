@@ -1,5 +1,5 @@
 
-8/26/2016, 3:55:34 PM
+8/26/2016, 6:50:35 PM
 
 Operating System
   Name                        = Mac OS X
@@ -21,7 +21,7 @@ Titanium SDK
   Target Platform             = iphone
 
 Command
-  /usr/local/bin/node /Users/jezrel_mx/.appcelerator/install/5.4.0/package/node_modules/titanium/lib/titanium.js build run --platform ios --log-level trace --sdk 5.3.1.GA --project-dir /Users/jezrel_mx/Documents/Appcelerator_Workspace_DIM/Maid Admin --target simulator --ios-version 9.3 --device-family iphone --deploy-type development --sim-type iphone --sim-version 9.3 --device-id 09BAA66D-FCBA-415A-A710-38D7A5C5CCC5 --skip-js-minify --no-colors --no-progress-bars --no-prompt --prompt-type socket-bundle --prompt-port 49267 --config-file /var/folders/r5/pj8_d8zj7vd4g39_nw7nssb00000gn/T/build-1472244932029.json --no-banner --project-dir /Users/jezrel_mx/Documents/Appcelerator_Workspace_DIM/Maid Admin
+  /usr/local/bin/node /Users/jezrel_mx/.appcelerator/install/5.4.0/package/node_modules/titanium/lib/titanium.js build run --platform ios --log-level trace --sdk 5.3.1.GA --project-dir /Users/jezrel_mx/Documents/Appcelerator_Workspace_DIM/Maid Admin --target simulator --ios-version 9.3 --device-family iphone --deploy-type development --sim-type iphone --sim-version 9.3 --device-id 09BAA66D-FCBA-415A-A710-38D7A5C5CCC5 --skip-js-minify --no-colors --no-progress-bars --no-prompt --prompt-type socket-bundle --prompt-port 49267 --config-file /var/folders/r5/pj8_d8zj7vd4g39_nw7nssb00000gn/T/build-1472255433244.json --no-banner --project-dir /Users/jezrel_mx/Documents/Appcelerator_Workspace_DIM/Maid Admin
 
 [TRACE]  [ioslib] Validating iOS Simulator UDID 09BAA66D-FCBA-415A-A710-38D7A5C5CCC5
 [TRACE]  [ioslib] Found iOS Simulator UDID 09BAA66D-FCBA-415A-A710-38D7A5C5CCC5
@@ -115,7 +115,7 @@ Command
 [INFO]   Initializing the build directory
 [TRACE]  offline build file /var/folders/r5/pj8_d8zj7vd4g39_nw7nssb00000gn/T/build-f2de957ac49271f9a4dadadc883254a252a13a1b.json
 [TRACE]  online 1
-[TRACE]  optimizing build, last build was 3307.633 sec ago
+[TRACE]  optimizing build, last build was 13808.749 sec ago
 [INFO]   Creating Xcode project
 [TRACE]  Removing pre-compile phase
 [TRACE]  No native module libraries to add
@@ -218,6 +218,7 @@ Command
 [DEBUG]  Copying CSS files
 [INFO]   Processing JavaScript files
 [DEBUG]  Overwriting /Users/jezrel_mx/Documents/Appcelerator_Workspace_DIM/Maid Admin/Resources/app.js => /Users/jezrel_mx/Documents/Appcelerator_Workspace_DIM/Maid Admin/build/iphone/build/Products/Debug-iphonesimulator/Maid Admin.app/app.js
+[DEBUG]  Overwriting /Users/jezrel_mx/Documents/Appcelerator_Workspace_DIM/Maid Admin/Resources/home.js => /Users/jezrel_mx/Documents/Appcelerator_Workspace_DIM/Maid Admin/build/iphone/build/Products/Debug-iphonesimulator/Maid Admin.app/home.js
 [DEBUG]  Overwriting /Users/jezrel_mx/Documents/Appcelerator_Workspace_DIM/Maid Admin/Resources/ui/common/FirstView.js => /Users/jezrel_mx/Documents/Appcelerator_Workspace_DIM/Maid Admin/build/iphone/build/Products/Debug-iphonesimulator/Maid Admin.app/ui/common/FirstView.js
 [DEBUG]  Overwriting /Users/jezrel_mx/Documents/Appcelerator_Workspace_DIM/Maid Admin/Resources/ui/handheld/ApplicationWindow.js => /Users/jezrel_mx/Documents/Appcelerator_Workspace_DIM/Maid Admin/build/iphone/build/Products/Debug-iphonesimulator/Maid Admin.app/ui/handheld/ApplicationWindow.js
 [DEBUG]  Overwriting /Users/jezrel_mx/Documents/Appcelerator_Workspace_DIM/Maid Admin/Resources/ui/handheld/android/ApplicationWindow.js => /Users/jezrel_mx/Documents/Appcelerator_Workspace_DIM/Maid Admin/build/iphone/build/Products/Debug-iphonesimulator/Maid Admin.app/ui/handheld/android/ApplicationWindow.js
@@ -241,13 +242,13 @@ Command
 [INFO]   Removing files
 [DEBUG]  Removing empty directories
 [INFO]   Skipping xcodebuild
-[INFO]   Finished building the application in 1s 578ms
+[INFO]   Finished building the application in 1s 659ms
 [INFO]   Launching iOS Simulator
 [TRACE]  [ioslib] Selected iOS Simulator: iPhone 5s
 [TRACE]  [ioslib]   UDID    = 09BAA66D-FCBA-415A-A710-38D7A5C5CCC5
 [TRACE]  [ioslib]   iOS     = 9.3
 [TRACE]  [ioslib] Autoselected Xcode: 7.3.1
-[TRACE]  [ioslib] Removing old log file: /Users/jezrel_mx/Library/Developer/CoreSimulator/Devices/09BAA66D-FCBA-415A-A710-38D7A5C5CCC5/data/Containers/Data/Application/11A2B660-0BED-4E96-9B76-7DC3FE0462FA/Documents/921fe673-b8ca-4bc7-9fff-2691def3e946.log
+[TRACE]  [ioslib] Removing old log file: /Users/jezrel_mx/Library/Developer/CoreSimulator/Devices/09BAA66D-FCBA-415A-A710-38D7A5C5CCC5/data/Containers/Data/Application/A8F5B4B7-B55F-4AE0-BC6A-AEF35261AB85/Documents/921fe673-b8ca-4bc7-9fff-2691def3e946.log
 [TRACE]  [ioslib] iPhone 5s Simulator already running with the correct udid
 [TRACE]  [ioslib] Tailing iPhone 5s Simulator system log: /Users/jezrel_mx/Library/Logs/CoreSimulator/09BAA66D-FCBA-415A-A710-38D7A5C5CCC5/system.log
 [TRACE]  [ioslib] Running: osascript "/Users/jezrel_mx/Library/Application Support/Titanium/mobilesdk/osx/5.3.1.GA/node_modules/ioslib/lib/sim_focus.scpt" "Simulator"
@@ -256,5 +257,4 @@ Command
 [TRACE]  [ioslib] App installed
 [TRACE]  [ioslib] Running: /Applications/Xcode.app/Contents/Developer/usr/bin/simctl launch 09BAA66D-FCBA-415A-A710-38D7A5C5CCC5 com.maid.admin
 [TRACE]  [ioslib] App launched
-[TRACE]  [Maid Admin] assertion failed: 15G31 13E230: libxpc.dylib + 57882 [66C28065-C9DB-3C8E-926F-5A40210A6D1B]: 0x7d
-[TRACE]  [ioslib] Found application log file: /Users/jezrel_mx/Library/Developer/CoreSimulator/Devices/09BAA66D-FCBA-415A-A710-38D7A5C5CCC5/data/Containers/Data/Application/79EFE574-E333-4622-8A69-A88025ACF1E9/Documents/921fe673-b8ca-4bc7-9fff-2691def3e946.log
+[TRACE]  [ioslib] Found application log file: /Users/jezrel_mx/Library/Developer/CoreSimulator/Devices/09BAA66D-FCBA-415A-A710-38D7A5C5CCC5/data/Containers/Data/Application/553DD5C9-389C-4115-B9B5-C098F5C53FA8/Documents/921fe673-b8ca-4bc7-9fff-2691def3e946.log

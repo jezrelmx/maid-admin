@@ -55,20 +55,84 @@ var lb_fecha = Titanium.UI.createLabel({
 });
 
 var view_input_usuario = Titanium.UI.createView({
-	backgroundColor : 'green',
 	width : '100%',
 	height : '60dp',
 	top : '50dp',
 	layout : 'absolute'
 });
 
+if (Titanium.Platform.osname == 'android') {
+	var img_usuario = Titanium.UI.createImageView({
+		image : '/images/user.png',
+		left : 0
+	});
+};
+
+if (Titanium.Platform.osname == 'iphone') {
+	var img_usuario = Titanium.UI.createImageView({
+		image : 'user.png',
+		left : 0
+	});
+};
+
+var view_linea = Titanium.UI.createView({
+	backgroundColor : '#FFFFFF',
+	width : Titanium.UI.FILL,
+	height : '3dp',
+	bottom : 0
+});
+
+var txtfield_usuario = Ti.UI.createTextField({
+	borderColor : 'transparent',
+	backgroundColor : 'transparent',
+	hintText : 'Escribe tu correo',
+	hintTextColor : 'white',
+	left : '40dp'
+});
+
+view_input_usuario.add(img_usuario);
+view_input_usuario.add(view_linea);
+view_input_usuario.add(txtfield_usuario);
+
 var view_input_contrasenia = Titanium.UI.createView({
-	backgroundColor : 'green',
+	// backgroundColor : 'red',
 	width : '100%',
 	height : '60dp',
 	top : '50dp',
 	layout : 'absolute'
 });
+
+if (Titanium.Platform.osname == 'android') {
+	var img_contrasenia = Titanium.UI.createImageView({
+		image : '/images/padlock.png',
+		left : 0
+	});
+};
+
+if (Titanium.Platform.osname == 'iphone') {
+	var img_contrasenia = Titanium.UI.createImageView({
+		image : 'padlock.png',
+		left : 0
+	});
+};
+
+var view_linea_2 = Titanium.UI.createView({
+	backgroundColor : '#FFFFFF',
+	width : Titanium.UI.FILL,
+	height : '3dp',
+	bottom : 0
+});
+
+var txtfield_contrasenia = Ti.UI.createTextField({
+	borderColor : 'transparent',
+	backgroundColor : 'transparent',
+	hintText : 'Contraseña',
+	hintTextColor : 'white'
+});
+
+view_input_contrasenia.add(img_contrasenia);
+view_input_contrasenia.add(view_linea_2);
+view_input_contrasenia.add(txtfield_contrasenia);
 
 var view_btn = Titanium.UI.createView({
 	backgroundColor : '#233348',
@@ -98,5 +162,66 @@ view_wrap.add(view_input_contrasenia);
 view_wrap.add(view_btn);
 
 win_login.add(view_wrap);
+
+view_btn.addEventListener('touchstart', function(e) {
+	view_btn.setOpacity(0.5);
+});
+
+view_btn.addEventListener('touchend', function(e) {
+	view_btn.setOpacity(1.0);
+});
+
+view_btn.addEventListener('click', function(e) {
+	var usuario = txtfield_usuario.value;
+	var contrasenia = txtfield_contrasenia.value;
+	
+	var url_login = 'http://carloshosting.esy.es/apiABC/index.php/Usuarios/' + usuario + '/' + contrasenia;
+	// alert(usuario + ' ' + contrasenia);
+	// Create an HTTPClient.
+	var xhr_login = Ti.Network.createHTTPClient();
+	xhr_login.setTimeout(10000);
+	
+	// Define the callback.
+	xhr_login.onload = function() {
+		// Handle the XML data.
+		var respuesta = this.responseText;
+		
+		var respuesta_json = JSON.parse(respuesta);
+		
+		if (respuesta_json.code == 200) {
+			alert('Bienvanido ' + usuario);
+			
+			// Create an HTTPClient.
+			var xhr_usuarios = Ti.Network.createHTTPClient();
+			xhr_usuarios.setTimeout(10000);
+			
+			// Define the callback.
+			xhr_usuarios.onload = function() {
+				// Handle the XML data.
+				var respuesta_usuarios = this.responseText;
+				var home = require('home');
+				home.abrir_home(respuesta_usuarios);
+			};
+			xhr_usuarios.onerror = function() {
+				alert('The HTTP request failed');
+			};
+			
+			// Send the request data.
+			xhr_usuarios.open('GET','http://carloshosting.esy.es/apiABC/index.php/Usuarios');
+			xhr_usuarios.send();
+			
+		} else{
+			alert('Revise su usuario y contraseña.');
+		};
+		// alert(doc);
+	};
+	xhr_login.onerror = function() {
+		alert('The HTTP request failed');
+	};
+	
+	// Send the request data.
+	xhr_login.open('GET', url_login );
+	xhr_login.send();
+});
 
 win_login.open();
